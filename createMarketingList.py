@@ -55,7 +55,7 @@ for line in csv_file:
 
     # add the key-value pair to the dictionary
 
-    dict[full_name] = {"email": email, "phone": phone }
+    dict[full_name] = {"email": email, "phone": phone}
 
     
 # print the dictionary after the loop is finished
@@ -63,11 +63,12 @@ print(dict)
 
 # iternate through the dictionary and write to the output file
 
+outfile.write("Name, Email, Phone\n")
 
 for line in dict[full_name]:
-    outfile.write(dict[full_name]["email"][line])
+    outfile.write(full_name + dict[full_name]["email"][line] + " " + dict[full_name]["phone"][line])
 
 
 # close your output file
 
-
+outfile.close()
