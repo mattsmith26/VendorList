@@ -68,7 +68,7 @@ outfile.write("Name, Email, Phone\n")
 for line in dict[full_name]:
     outfile.write(full_name + dict[full_name]["email"][line] + " " + dict[full_name]["phone"][line])
 
-
 # close your output file
+
 
 outfile.close()
